@@ -53,3 +53,103 @@ nav{
 .nav-links a:hover{
     color:#6bd6d6;
 }
+/* ===== HERO SECTION ===== */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:90px 10%;
+gap:60px;
+background:linear-gradient(135deg,#f4f9fc,#ffffff);
+flex-wrap:wrap;
+}
+
+.hero-text{
+flex:1;
+min-width:320px;
+}
+
+.hero-image{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero img{
+width:340px;
+height:340px;
+object-fit:cover;
+border-radius:50%;
+border:8px solid #0f4c81;
+box-shadow:0 15px 40px rgba(0,0,0,.18);
+}
+
+.welcome{
+color:#009688;
+font-weight:700;
+letter-spacing:1px;
+margin-bottom:15px;
+}
+
+.hero h1{
+font-size:58px;
+color:#0f4c81;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:28px;
+font-weight:500;
+margin-bottom:25px;
+}
+
+.hero-description{
+font-size:18px;
+line-height:1.8;
+max-width:650px;
+margin-bottom:35px;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn-primary,
+.btn-secondary{
+
+padding:15px 34px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn-primary{
+
+background:#0f4c81;
+color:white;
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-3px);
+
+}
+
+.btn-secondary{
+
+border:2px solid #0f4c81;
+color:#0f4c81;
+
+}
+
+.btn-secondary:hover{
+
+background:#0f4c81;
+color:white;
+
+}
