@@ -1,95 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giftneville Onyango | Registered Nurse</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giftneville Onyango | Registered Nurse</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
-        }
+<style>
 
-        body{
-            background:#f5f7fa;
-            color:#222;
-            line-height:1.6;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
 
-        header{
-            background:#0f4c81;
-            color:white;
-            text-align:center;
-            padding:70px 20px;
-        }
+html{
+scroll-behavior:smooth;
+}
 
-        header h1{
-            font-size:48px;
-            margin-bottom:10px;
-        }
+body{
+background:#f5f7fa;
+color:#333;
+}
 
-        header p{
-            font-size:22px;
-        }
+nav{
+background:#0f4c81;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+position:sticky;
+top:0;
+}
 
-        section{
-            max-width:1000px;
-            margin:auto;
-            padding:60px 20px;
-        }
+nav h2{
+color:white;
+}
 
-        h2{
-            color:#0f4c81;
-            margin-bottom:20px;
-        }
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+}
 
-        .button{
-            display:inline-block;
-            margin-top:25px;
-            background:#0f4c81;
-            color:white;
-            padding:12px 25px;
-            border-radius:6px;
-            text-decoration:none;
-        }
+.hero{
+display:flex;
+align-items:center;
+justify-content:center;
+flex-wrap:wrap;
+padding:70px 10%;
+background:white;
+}
 
-        footer{
-            background:#222;
-            color:white;
-            text-align:center;
-            padding:25px;
-        }
-    </style>
+.hero img{
+width:260px;
+height:260px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid #0f4c81;
+margin:20px;
+}
+
+.hero-text{
+max-width:600px;
+margin:20px;
+}
+
+.hero h1{
+font-size:48px;
+color:#0f4c81;
+}
+
+.hero h3{
+margin-top:10px;
+font-weight:normal;
+}
+
+.button{
+display:inline-block;
+margin-top:30px;
+background:#0f4c81;
+color:white;
+padding:14px 30px;
+text-decoration:none;
+border-radius:8px;
+}
+
+section{
+padding:70px 10%;
+}
+
+h2{
+color:#0f4c81;
+margin-bottom:20px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+footer{
+background:#0f4c81;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<header>
+<nav>
+
+<h2>Giftneville</h2>
+
+<div>
+
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<img src="ps3.png" alt="Giftneville Onyango">
+
+<div class="hero-text">
 
 <h1>Giftneville Onyango</h1>
 
-<p>Registered Nurse | Healthcare AI Contributor | Clinical Reasoning</p>
+<h3>Registered Nurse | Healthcare AI Contributor | Clinical Reasoning</h3>
+
+<p style="margin-top:20px;">
+
+Passionate about evidence-based nursing, healthcare AI, medical content evaluation, and clinical reasoning.
+
+</p>
 
 <a class="button" href="https://github.com/giftneville-rn" target="_blank">
-Visit My GitHub Portfolio
+
+View My GitHub Portfolio
+
 </a>
 
-</header>
+</div>
 
-<section>
+</section>
 
-<h2>Welcome</h2>
+<section id="about">
+
+<h2>About Me</h2>
 
 <p>
-Welcome to my professional portfolio.
 
-I am a Registered Nurse from Kenya with a passion for healthcare, clinical reasoning, evidence-based practice, and Artificial Intelligence in healthcare.
+I am a Registered Nurse from Kenya with clinical experience at Lifecare Hospital, Eldoret. I enjoy combining my healthcare knowledge with Artificial Intelligence by contributing to medical content evaluation, healthcare research, and clinical reasoning projects.
 
-This website showcases my nursing background, healthcare AI portfolio, and professional projects.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Professional Skills</h2>
+
+<div class="skills">
+
+<div class="card">
+
+<h3>Clinical Reasoning</h3>
+
+<p>Evidence-based nursing decisions.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Patient Assessment</h3>
+
+<p>Comprehensive patient evaluation and monitoring.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Healthcare AI</h3>
+
+<p>Medical AI evaluation and prompt review.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Medical Documentation</h3>
+
+<p>Accurate clinical documentation and reporting.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>
+
+📧 onyangogift@gmail.com
+
+</p>
+
+<p>
+
+📞 +254 791 427 017
+
 </p>
 
 </section>
@@ -103,3 +245,6 @@ This website showcases my nursing background, healthcare AI portfolio, and profe
 </body>
 
 </html>
+  
+
+
