@@ -392,3 +392,13 @@ color:#555;
     opacity:1;
     transform:translateY(0);
 }
+.contact-card a{
+    color:#0f4c81;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.contact-card a:hover{
+    color:#009688;
+    text-decoration:underline;
+}
