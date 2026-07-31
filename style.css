@@ -208,45 +208,56 @@ color:#555;
 }
 /* ===== PROJECTS SECTION ===== */
 
+/* ===================================
+   PROJECTS SECTION
+=================================== */
+
 #projects{
-    padding:80px 10%;
-    background:white;
+    padding:90px 10%;
+    background:#ffffff;
 }
 
 #projects h2{
     text-align:center;
-    font-size:36px;
-    margin-bottom:50px;
+    font-size:38px;
     color:#0f4c81;
+    margin-bottom:60px;
 }
 
 .projects-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:30px;
 }
 
 .project-card{
-    background:#f8fbfd;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
+    background:#ffffff;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    border-top:6px solid #009688;
+    transition:all .35s ease;
 }
 
 .project-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    transform:translateY(-10px);
+    box-shadow:0 22px 45px rgba(15,76,129,.18);
 }
 
 .project-card h3{
     color:#0f4c81;
-    margin-bottom:15px;
+    font-size:24px;
+    margin-bottom:18px;
 }
 
 .project-card p{
     color:#555;
-    line-height:1.7;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.project-card strong{
+    color:#0f4c81;
 }
 /* ===== EXPERIENCE SECTION ===== */
 
@@ -444,4 +455,119 @@ color:#555;
     color:#555;
     font-weight:500;
     line-height:1.5;
+}
+/* ===================================
+   CERTIFICATIONS SECTION
+=================================== */
+
+#certifications{
+    padding:80px 10%;
+    background:#f8fbfd;
+}
+
+#certifications h2{
+    text-align:center;
+    font-size:36px;
+    color:#0f4c81;
+    margin-bottom:50px;
+}
+
+.certifications-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.certification-card{
+    background:#ffffff;
+    border-radius:18px;
+    padding:35px 30px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:all .35s ease;
+}
+
+.certification-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(15,76,129,.18);
+}
+
+.cert-icon{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.certification-card h3{
+    color:#0f4c81;
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.issuer{
+    color:#009688;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.certification-card p{
+    color:#555;
+    line-height:1.8;
+}
+/* ===================================
+   PROFESSIONAL FOOTER
+=================================== */
+
+footer{
+    background:#0f4c81;
+    color:white;
+    padding:60px 10% 30px;
+    text-align:center;
+}
+
+.footer-container{
+    max-width:1000px;
+    margin:auto;
+}
+
+.footer-container h2{
+    font-size:32px;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.footer-title{
+    color:#d9f5f2;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:35px;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    padding:12px 22px;
+    border:2px solid rgba(255,255,255,.25);
+    border-radius:10px;
+    transition:all .3s ease;
+}
+
+.footer-links a:hover{
+    background:#009688;
+    border-color:#009688;
+    transform:translateY(-3px);
+}
+
+.footer-copy{
+    font-size:14px;
+    color:#cfd8dc;
+    border-top:1px solid rgba(255,255,255,.15);
+    padding-top:25px;
 }
