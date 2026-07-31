@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DKA Clinical Decision Support Tool</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🩺 DKA Clinical Decision Support Tool</h1>
+
+    <p class="subtitle">
+        Evidence-Based Nursing Assessment & Clinical Decision Support
+    </p>
+
+    <div class="card">
+
+        <label>Blood Glucose (mmol/L)</label>
+        <input type="number" id="glucose">
+
+        <label>Blood pH</label>
+        <input type="number" step="0.01" id="ph">
+
+        <label>Serum Bicarbonate (HCO₃⁻ mmol/L)</label>
+        <input type="number" id="bicarb">
+
+        <label>Serum Potassium (mmol/L)</label>
+        <input type="number" step="0.1" id="potassium">
+
+        <label>Ketones</label>
+
+        <select id="ketones">
+            <option value="positive">Positive</option>
+            <option value="negative">Negative</option>
+        </select>
+
+        <label>Mental Status</label>
+
+        <select id="mental">
+
+            <option>Alert</option>
+
+            <option>Drowsy</option>
+
+            <option>Confused</option>
+
+            <option>Unconscious</option>
+
+        </select>
+
+        <button onclick="assessDKA()">
+
+            Assess Patient
+
+        </button>
+
+    </div>
+
+    <div id="results"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
