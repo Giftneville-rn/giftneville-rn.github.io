@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medication & IV Dose Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>💊 Medication & IV Dose Calculator</h1>
+
+    <p class="subtitle">
+        Clinical Calculation Tool for Healthcare Professionals
+    </p>
+
+    <!-- Medication Dose Calculator -->
+
+    <div class="card">
+
+        <h2>💊 Medication Dose Calculator</h2>
+
+        <label>Patient Weight (kg)</label>
+        <input type="number" id="weight">
+
+        <label>Ordered Dose (mg/kg)</label>
+        <input type="number" id="dose">
+
+        <label>Drug Concentration (mg/mL)</label>
+        <input type="number" id="concentration">
+
+        <button onclick="calculateMedication()">
+            Calculate Medication Dose
+        </button>
+
+        <div id="medicationResult"></div>
+
+    </div>
+
+    <!-- IV Infusion Calculator -->
+
+    <div class="card">
+
+        <h2>💧 IV Infusion Rate</h2>
+
+        <label>Total Volume (mL)</label>
+        <input type="number" id="volume">
+
+        <label>Time (hours)</label>
+        <input type="number" id="hours">
+
+        <button onclick="calculateIV()">
+            Calculate IV Rate
+        </button>
+
+        <div id="ivResult"></div>
+
+    </div>
+
+    <!-- Drip Rate Calculator -->
+
+    <div class="card">
+
+        <h2>💉 Drip Rate Calculator</h2>
+
+        <label>Total Volume (mL)</label>
+        <input type="number" id="dripVolume">
+
+        <label>Time (minutes)</label>
+        <input type="number" id="minutes">
+
+        <label>Drop Factor (gtt/mL)</label>
+
+        <select id="dropFactor">
+
+            <option value="10">10 gtt/mL</option>
+
+            <option value="15">15 gtt/mL</option>
+
+            <option value="20">20 gtt/mL</option>
+
+            <option value="60">60 gtt/mL (Microdrip)</option>
+
+        </select>
+
+        <button onclick="calculateDrip()">
+            Calculate Drip Rate
+        </button>
+
+        <div id="dripResult"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
