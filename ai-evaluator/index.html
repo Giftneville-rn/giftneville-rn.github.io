@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Medical Response Evaluator</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🤖 AI Medical Response Evaluator</h1>
+
+<p class="subtitle">
+
+Evaluate AI-generated medical responses for clinical quality and patient safety.
+
+</p>
+
+<div class="card">
+
+<label>Clinical Question</label>
+
+<textarea
+id="question"
+rows="4"
+placeholder="Enter the clinical question..."></textarea>
+
+<label>AI Response A</label>
+
+<textarea
+id="responseA"
+rows="8"
+placeholder="Paste AI Response A..."></textarea>
+
+<label>AI Response B</label>
+
+<textarea
+id="responseB"
+rows="8"
+placeholder="Paste AI Response B..."></textarea>
+
+<button onclick="evaluateResponses()">
+
+Evaluate Responses
+
+</button>
+
+</div>
+
+<div id="results"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
